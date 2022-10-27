@@ -2,6 +2,18 @@
 
 Retrieve the best paragraphs from all of Paul Graham's essays given a query.
 
+## Usage
+
+Get data from Paul Graham essays into `pg_essays/`:
+```bash
+python scripts/extract_pg_text.py
+```
+
+Extract embeddings from each paragraph and save to disk in `pg_embeddings/`:
+```bash
+python scripts/encode_paragraphs.py
+```
+
 
 ## TODO
 
@@ -13,7 +25,7 @@ Dataset extraction:
 - [ ] Add all tweets from Paul Graham? (32k tweets)
 
 Query:
-- [ ] Split out encoding script
+- [x] Split out encoding script
 - [ ] Add argparse or equivalent to handle parameters
 - [x] Add streamlit demo
 - [x] Display context around paragraph?
