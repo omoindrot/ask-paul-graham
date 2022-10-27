@@ -15,8 +15,8 @@ Dataset extraction:
 Query:
 - [ ] Split out encoding script
 - [ ] Add argparse or equivalent to handle parameters
-- [ ] Add streamlit demo
-- [ ] Display context around paragraph?
+- [x] Add streamlit demo
+- [x] Display context around paragraph?
 - [ ] Or add link to highlighted text in content ([example](http://www.paulgraham.com/really.html?viewfullsite=1#:~:text=A%20lot%20of%20founders%20complained))
 
 Huggingface:
