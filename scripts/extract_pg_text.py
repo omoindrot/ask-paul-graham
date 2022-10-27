@@ -69,6 +69,11 @@ for i, (link, name) in enumerate(links):
         article = article.replace(call, "")
         article = article.strip()
 
+        # Remove end of page references like [1], [2]...
+        article = re.sub(r"\[[0-9]\]", "", article)
+        # Remove useless whitespaces
+        article = re.sub(r"\s\s+", " ", article)
+
         # Write retreived text in a file
         name = "_".join(name.split(" ")).lower()
         name = re.sub(r"[\W\s]+", "", name)
